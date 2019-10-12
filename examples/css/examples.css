@@ -1,19 +1,19 @@
 .var-table {
-    border: 1px solid #CFCFCF;
+    border: 1px solid #E8E8E8;
     background-color: #FFFFFF;
 }
 .var-table thead {
-    border-bottom: 1px solid #CFCFCF;
+    border-bottom: 1px solid #E8E8E8;
 }
 .var-table tr {
-    border-top: 1px solid #CFCFCF;
+    border-top: 1px solid #E8E8E8;
 }
 .var-table tr:first-child {
     border-top: 0;
 }
 .var-table td, .var-table th {
     padding: 8px 16px;
-    border-left: 1px solid #CFCFCF;
+    border-left: 1px solid #E8E8E8;
 }
 .var-table td:first-child, .var-table th:first-child {
     border-left: 0;

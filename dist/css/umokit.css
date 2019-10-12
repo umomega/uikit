@@ -732,6 +732,14 @@ h6 {
   background-color: #CFCFCF !important;
 }
 
+.has-color-grey-lightest {
+  color: #E8E8E8 !important;
+}
+
+.has-background-grey-lightest {
+  background-color: #E8E8E8 !important;
+}
+
 .has-color-white-ter {
   color: #F4F4F4 !important;
 }
@@ -994,6 +1002,14 @@ h6 {
 
 .has-background-text-muted {
   background-color: #A09FA0 !important;
+}
+
+.has-color-outline {
+  color: #E8E8E8 !important;
+}
+
+.has-background-outline {
+  background-color: #E8E8E8 !important;
 }
 
 .has-text-weight-normal {
