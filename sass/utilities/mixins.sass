@@ -90,6 +90,13 @@
 %unselectable
     +unselectable
 
+=block($spacing: $block-spacing)
+  &:not(:last-child)
+    margin-bottom: $spacing
+
+%block
+  +block
+
 =overlay($offset: 0)
     bottom: $offset
     left: $offset

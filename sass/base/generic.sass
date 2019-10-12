@@ -48,6 +48,7 @@ a
     color: $link
     cursor: pointer
     text-decoration: none
+    transition: color $duration-short
 
 hr
     background-color: $text-muted
@@ -87,3 +88,7 @@ h5
     font-size: $size-5
 h6
     font-size: $size-6
+
+.no-touchevents
+    a:hover
+        color: $link-hover
