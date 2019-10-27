@@ -13,6 +13,9 @@
     vertical-align: top
     width: $dimensions
 
+=overflow-touch
+    -webkit-overflow-scrolling: touch
+
 =placeholder
     $placeholders: ':-moz' ':-webkit-input' '-moz' '-ms-input'
     @each $placeholder in $placeholders
@@ -106,3 +109,7 @@
 
 %overlay
     +overlay
+
+=pseudo-block
+    content: ''
+    display: block
