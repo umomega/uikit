@@ -93,6 +93,25 @@
 %unselectable
     +unselectable
 
+=arrow($color: transparent)
+    border: 3px solid $color
+    border-radius: 2px
+    border-right: 0
+    border-top: 0
+    content: " "
+    display: block
+    height: 0.625em
+    margin-top: -0.4375em
+    pointer-events: none
+    position: absolute
+    top: 50%
+    transform: rotate(-45deg)
+    transform-origin: center
+    width: 0.625em
+
+%arrow
+  +arrow
+
 =block($spacing: $block-spacing)
   &:not(:last-child)
     margin-bottom: $spacing
@@ -168,6 +187,21 @@
 
 %delete
     +delete
+
+=loader
+    animation: spin 500ms infinite linear
+    border: 2px solid $grey-lighter
+    border-radius: $radius-rounded
+    border-right-color: transparent
+    border-top-color: transparent
+    content: ""
+    display: block
+    height: 1em
+    position: relative
+    width: 1em
+
+%loader
+    +loader
 
 =overlay($offset: 0)
     bottom: $offset
