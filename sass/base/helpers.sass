@@ -101,9 +101,9 @@ $alignments: ('centered': 'center', 'justified': 'justify', 'left': 'left', 'rig
 
 @each $name, $color in $colors
     .has-color-#{$name}
-        color: $color !important
+        color: nth($color, 1) !important
     .has-background-#{$name}
-        background-color: $color !important
+        background-color: nth($color, 1) !important
 
 .has-text-weight-light
   font-weight: $weight-light !important

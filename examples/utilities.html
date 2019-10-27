@@ -16,6 +16,10 @@
                 <a class="is-size-5 nav-link" href="utilities.html">Utilities</a>
                 <a class="is-size-5 nav-link" href="helpers.html">Helpers</a>
                 <a class="is-size-5 nav-link" href="layout.html">Layout</a>
+                <a class="is-size-5 nav-link" href="components.html">Components</a>
+                <a class="is-size-5 nav-link" href="elements.html">Elements</a>
+                <a class="is-size-5 nav-link" href="form.html">Form</a>
+                <a class="is-size-5 nav-link" href="mailing.html">Mailing</a>
             </div>
 
             <article>
@@ -57,6 +61,8 @@
                             <tr><td><code>$yellow-dark</code></td><td><small class="var-tag">color</small></td><td><span class="var-swatch has-background-yellow-dark"></span><code>#E2C54D</code></td></tr>
                             <tr><td><code>$yellow</code></td><td><small class="var-tag">color</small></td><td><span class="var-swatch has-background-yellow"></span><code>#FFDE57</code></td></tr>
                             <tr><td><code>$yellow-light</code></td><td><small class="var-tag">color</small></td><td><span class="var-swatch has-background-yellow-light"></span><code>#FFF6D5</code></td></tr>
+                            <tr><td><code>$external-fonts</code></td><td><small class="var-tag">boolean</small></td><td><code>true</code></td></tr>
+                            <tr><td><code>$external-fonts-url</code></td><td><small class="var-tag">url</small></td><td><code>"https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap&subset=latin-ext"</code></td></tr>
                             <tr><td><code>$family-sans-serif</code></td><td><small class="var-tag">font-family</small></td><td><code>"Noto Sans", "Helvetica", "Arial", sans-serif</code></td></tr>
                             <tr><td><code>$family-monospace</code></td><td><small class="var-tag">font-family</small></td><td><code>monospace</code></td></tr>
                             <tr><td><code>$render-mode</code></td><td><small class="var-tag">keyword</small></td><td><code>optimizeLegibility</code></td></tr>
@@ -94,7 +100,7 @@
                             <tr><td><code>$duration-medium-up</code></td><td><small class="var-tag">duration</small></td><td><code>450ms</code></td></tr>
                             <tr><td><code>$duration-long</code></td><td><small class="var-tag">duration</small></td><td><code>700ms</code></td></tr>
                             <tr><td><code>$duration-long-up</code></td><td><small class="var-tag">duration</small></td><td><code>750ms</code></td></tr>
-                            <tr><td><code>$box-shadow</code></td><td><small class="var-tag">shadow</small></td><td><code>0 3px 6px rgba($black, .2)</code></td></tr>
+                            <tr><td><code>$shadow</code></td><td><small class="var-tag">shadow</small></td><td><code>0 0.5em 1em -0.125em rgba($black, .2), 0 0px 0 1px rgba($black, 0.02)</code></td></tr>
                             <tr><td><code>$variable-columns</code></td><td><small class="var-tag">boolean</small></td><td><code>false</code></td></tr>
                         </tbody>
                     </table>
@@ -127,6 +133,12 @@
                             <tr><td><code>$warning-dark</code></td><td><small class="var-tag">color</small></td><td><code>$yellow-dark</code></td><td><span class="var-swatch has-background-warning-dark"></span><code>#E2C54D</code></td></tr>
                             <tr><td><code>$warning</code></td><td><small class="var-tag">color</small></td><td><code>$yellow</code></td><td><span class="var-swatch has-background-warning"></span><code>#FFDE57</code></td></tr>
                             <tr><td><code>$warning-light</code></td><td><small class="var-tag">color</small></td><td><code>$yellow-light</code></td><td><span class="var-swatch has-background-warning-light"></span><code>#FFF6D5</code></td></tr>
+                            <tr><td><code>$background</code></td><td><small class="var-tag">color</small></td><td><code>$white</code></td><td><span class="var-swatch has-background-white"></span><code>#FFFFFF</code></td></tr>
+                            <tr><td><code>$border</code></td><td><small class="var-tag">color</small></td><td><code>$grey</code></td><td><span class="var-swatch has-background-grey"></span><code>#A09FA0</code></td></tr>
+                            <tr><td><code>$border-hover</code></td><td><small class="var-tag">color</small></td><td><code>$grey-light</code></td><td><span class="var-swatch has-background-grey-light"></span><code>#B7B7B8</code></td></tr>
+                            <tr><td><code>$border-light</code></td><td><small class="var-tag">color</small></td><td><code>$grey-lighter</code></td><td><span class="var-swatch has-background-grey-lighter"></span><code>#CFCFCF</code></td></tr>
+                            <tr><td><code>$border-light-hover</code></td><td><small class="var-tag">color</small></td><td><code>$grey-light</code></td><td><span class="var-swatch has-background-grey-light"></span><code>#B7B7B8</code></td></tr>
+                            <tr><td><code>$text-strong</code></td><td><small class="var-tag">color</small></td><td><code>$black</code></td><td><span class="var-swatch has-background-text-strong"></span><code>#303031</code></td></tr>
                             <tr><td><code>$text</code></td><td><small class="var-tag">color</small></td><td><code>$black</code></td><td><span class="var-swatch has-background-text"></span><code>#303031</code></td></tr>
                             <tr><td><code>$text-light</code></td><td><small class="var-tag">color</small></td><td><code>$black-light</code></td><td><span class="var-swatch has-background-text-light"></span><code>#414042</code></td></tr>
                             <tr><td><code>$text-muted</code></td><td><small class="var-tag">color</small></td><td><code>$grey</code></td><td><span class="var-swatch has-background-text-muted"></span><code>#A09FA0</code></td></tr>
@@ -134,7 +146,11 @@
                             <tr><td><code>$link</code></td><td><small class="var-tag">color</small></td><td><code>$blue</code></td><td><span class="var-swatch has-background-blue"></span><code>#00249C</code></td></tr>
                             <tr><td><code>$link-hover</code></td><td><small class="var-tag">color</small></td><td><code>$blue-dark</code></td><td><span class="var-swatch has-background-blue-dark"></span><code>#001B75</code></td></tr>
                             <tr><td><code>$sizes</code></td><td><small class="var-tag">map</small></td><td><code>$size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 $size-8 $size-9</code></td><td></tr>
-                            <tr><td><code>$colors</code></td><td><small class="var-tag">map</small></td><td><code style="white-space: normal; max-width: 50vw">('black': $black, 'black-light': $black-light, 'black-lighter': $black-lighter, 'grey-darker': $grey-darker, 'grey-dark': $grey-dark, 'grey': $grey, 'grey-light': $grey-light, 'grey-lighter': $grey-lighter, 'grey-lightest': $grey-lightest, 'white-ter': $white-ter, 'white-bis': $white-bis, 'white': $white, 'green-dark': $green-dark, 'green': $green, 'green-light': $green-light, 'yellow-dark': $yellow-dark, 'yellow': $yellow, 'yellow-light': $yellow-light, 'blue-dark': $blue-dark, 'blue': $blue, 'blue-light': $blue-light, 'red-dark': $red-dark, 'red': $red, 'red-light': $red-light, 'primary-dark': $primary-dark, 'primary': $primary, 'primary-light': $primary-light, 'info-dark': $info-dark, 'info': $info, 'info-light': $info-light, 'success-dark': $success-dark, 'success': $success, 'warning-dark': $warning-dark, 'warning': $warning, 'warning-light': $warning-light, 'success-light': $success-light, 'danger-dark': $danger-dark, 'danger': $danger, 'danger-light': $danger-light, 'text': $text, 'text-light': $text-light, 'text-muted': $text-muted, 'outline': $outline)</code></td><td></tr>
+                            <tr><td><code>$colors</code></td><td><small class="var-tag">map</small></td><td><code style="white-space: normal; max-width: 50vw">('black': ($black, $white), 'black-light': ($black-light, $white), 'black-lighter': ($black-lighter, $white), 'grey-darker': ($grey-darker, $white), 'grey-dark': ($grey-dark, $white), 'grey': ($grey, $white), 'grey-light': ($grey-light, $black), 'grey-lighter': ($grey-lighter, $black), 'grey-lightest': ($grey-lightest, $black), 'white-ter': ($white-ter, $black), 'white-bis': ($white-bis, $black), 'white': ($white, $black), 'green-dark': ($green-dark, $white), 'green': ($green, $white), 'green-light': ($green-light, $green-dark), 'yellow-dark': ($yellow-dark, $black), 'yellow': ($yellow, $black), 'yellow-light': ($yellow-light, $yellow-dark), 'blue-dark': ($blue-dark, $white), 'blue': ($blue, $white), 'blue-light': ($blue-light, $blue-dark), 'red-dark': ($red-dark, $white), 'red': ($red, $white), 'red-light': ($red-light, $red-dark), 'primary-dark': ($primary-dark, $white), 'primary': ($primary, $white), 'primary-light': ($primary-light, $primary-dark), 'info-dark': ($info-dark, $white), 'info': ($info, $white), 'info-light': ($info-light, $info-dark), 'success-dark': ($success-dark, $white), 'success': ($success, $white), 'success-light': ($success-light, $success-dark), 'warning-dark': ($warning-dark, $black), 'warning': ($warning, $black), 'warning-light': ($warning-light, $warning-dark), 'danger-dark': ($danger-dark, $white), 'danger': ($danger, $white), 'danger-light': ($danger-light, $danger-dark), 'text-strong': ($text-strong, $white), 'text': ($text, $white), 'text-light': ($text-light, $white), 'text-muted': ($text-muted, $white), 'outline': ($outline, $black))</code></td><td></td></tr>
+                            <tr><td><code>$size-small</code></td><td><small class="var-tag">size</small></td><td><code>$size-7</code></td><td>0.875rem</td></tr>
+                            <tr><td><code>$size-normal</code></td><td><small class="var-tag">size</small></td><td><code>$size-6</code></td><td>1rem</td></tr>
+                            <tr><td><code>$size-medium</code></td><td><small class="var-tag">size</small></td><td><code>$size-5</code></td><td>1.25rem</td></tr>
+                            <tr><td><code>$size-large</code></td><td><small class="var-tag">size</small></td><td><code>$size-4</code></td><td>1.5rem</td></tr>
                         </tbody>
                     </table>
                 </section>
@@ -171,6 +187,7 @@
                             <tr><td><code>+placeholder</code></td><td>Sets the styles of an input placeholder.</td></tr>
                             <tr><td><code>+from, +until, +mobile, +tablet,<br>+tablet-only, +touch, +desktop,<br>+until-widescreen, +widescreen,<br>+widescreen-only, +until-fullhd,<br>+fullhd</code></td><td>Shorthands for media queries for device thresholds.</td></tr>
                             <tr><td><code>+unselectable</code></td><td>Turns the element unselectable. Used for buttons to prevent selection when clicking.</td></tr>
+                            <tr><td><code>+delete</code></td><td>A versatile delete cross inherited from Bulma: <a href="https://bulma.io/documentation/elements/delete/" target="_blank">https://bulma.io/documentation/elements/delete/</a></td></tr>
                             <tr><td><code>+overlay</code></td><td>Completely covers the first positioned parent with given offset.</td></tr>
                             <tr><td><code>+pseudo-block</code></td><td>Turns a pseudo element into a block.</td></tr>
                         </tbody>
