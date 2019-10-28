@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../dist/css/umokit.css">
         <link rel="stylesheet" href="css/examples.css">
         <script src="../dist/js/umokit.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     </head>
     <body>
         <div class="container">
@@ -16,18 +17,18 @@
                 <a class="is-size-5 nav-link" href="utilities.html">Utilities</a>
                 <a class="is-size-5 nav-link" href="helpers.html">Helpers</a>
                 <a class="is-size-5 nav-link" href="layout.html">Layout</a>
-                <a class="is-size-5 nav-link" href="components.html">Components</a>
                 <a class="is-size-5 nav-link" href="elements.html">Elements</a>
+                <a class="is-size-5 nav-link" href="components.html">Components</a>
                 <a class="is-size-5 nav-link" href="form.html">Form</a>
                 <a class="is-size-5 nav-link" href="mailing.html">Mailing</a>
             </div>
 
             <article>
-                <h2 class="has-color-primary">5. Elements</h2>
+                <h2 class="has-color-primary">4. Elements</h2>
                 <hr>
 
                 <section>
-                    <h3 class="has-color-primary">5.1. Inherited</h3>
+                    <h3 class="has-color-primary">4.1. Inherited</h3>
                     <table class="var-table is-fullwidth">
                         <thead>
                             <tr>
@@ -36,9 +37,146 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td><code>breadcrumb</code></td><td>Directly inherited from Bulma: <a href="https://bulma.io/documentation/components/breadcrumb/" target="_blank">https://bulma.io/documentation/components/breadcrumbs/</a></td></tr>
+                            <tr><td><code>box</code></td><td>Inherited from Bulma with minor modifications: <a href="https://bulma.io/documentation/elements/box/" target="_blank">https://bulma.io/documentation/elements/box/</a></td></tr>
+                            <tr><td><code>button</code></td><td>Inherited from Bulma with modifications and extensions: <a href="https://bulma.io/documentation/elements/button" target="_blank">https://bulma.io/documentation/elements/button/</a></td></tr>
+                            <tr><td><code>content</code></td><td>Directly inherited from Bulma: <a href="https://bulma.io/documentation/elements/content/" target="_blank">https://bulma.io/documentation/elements/content/</a></td></tr>
+                            <tr><td><code>icon</code></td><td>Directly inherited from Bulma: <a href="https://bulma.io/documentation/elements/icon/" target="_blank">https://bulma.io/documentation/elements/icon/</a></td></tr>
+                            <tr><td><code>notification</code></td><td>Inherited from Bulma with minor modifications: <a href="https://bulma.io/documentation/elements/notification/" target="_blank">https://bulma.io/documentation/elements/notification/</a></td></tr>
+                            <tr><td><code>progress</code></td><td>Directly inherited from Bulma: <a href="https://bulma.io/documentation/elements/progress/" target="_blank">https://bulma.io/documentation/elements/progress/</a></td></tr>
+                            <tr><td><code>tag</code></td><td>Directly inherited from Bulma: <a href="https://bulma.io/documentation/elements/tag/" target="_blank">https://bulma.io/documentation/elements/tag/</a></td></tr>
+                            <tr><td><code>title</code></td><td>Directly inherited from Bulma: <a href="https://bulma.io/documentation/elements/title/" target="_blank">https://bulma.io/documentation/elements/title/</a></td></tr>
                         </tbody>
                     </table>
+
+                </section>
+
+                <section>
+                    <h3 class="has-color-primary">4.2. Buttons</h3>
+                    <p>The standard Bulma styles for buttons are modified and extended. Examples are below:</p>
+
+                    <div class="buttons">
+                        <button class="button is-white">WHITE</button>
+                        <button class="button is-light">LIGHT</button>
+                        <button class="button is-dark">DARK</button>
+                        <button class="button is-black">BLACK</button>
+                        <button class="button is-text">TEXT</button>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="button is-primary">PRIMARY</button>
+                        <button class="button is-link">LINK</button>
+                        <button class="button is-info">INFO</button>
+                        <button class="button is-success">SUCCESS</button>
+                        <button class="button is-warning">WARNING</button>
+                        <button class="button is-danger">DANGER</button>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="button icon-only-wide is-primary">
+                            <span class="icon">
+                                <i class="fa fa-heading"></i>
+                            </span>
+                        </button>
+                        <button class="button icon-only">
+                            <span class="icon">
+                                <i class="fa fa-heading"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="buttons has-addons">
+                        <button class="button icon-only-wide is-primary">
+                            <span class="icon">
+                                <i class="fa fa-heading"></i>
+                            </span>
+                        </button>
+                        <button class="button icon-only is-borderless">
+                            <span class="icon">
+                                <i class="fa fa-heading"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="button">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </button>
+                        <button class="button">
+                            <span>GitHub</span>
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="button">
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                            <span>PREVIOUS</span>
+                        </button>
+                        <button class="button">
+                            <span>NEXT</span>
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="button is-primary">
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                            <span>PREVIOUS</span>
+                        </button>
+                        <button class="button is-light">
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                            <span>PREVIOUS</span>
+                        </button>
+                        <button class="button is-dark">
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                            <span>PREVIOUS</span>
+                        </button>
+                        <button class="button is-link">
+                            <span>NEXT</span>
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                        <button class="button is-info">
+                            <span>NEXT</span>
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                        <button class="button is-success">
+                            <span>NEXT</span>
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                        <button class="button is-warning">
+                            <span>NEXT</span>
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                        <button class="button is-danger">
+                            <span>NEXT</span>
+                            <span class="icon-flap">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
 
                 </section>
             </article>
