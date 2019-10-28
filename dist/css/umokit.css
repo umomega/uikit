@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap&subset=latin-ext");
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -9,10 +17,14 @@
 }
 
 .spins {
-  animation-timing-function: linear;
-  animation-name: spin;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .is-unselectable, .button, .delete, .file, .breadcrumb {
@@ -46,7 +58,8 @@
 }
 
 .button.is-loading::after, .select.is-loading::after, .control.is-loading::after {
-  animation: spin 500ms infinite linear;
+  -webkit-animation: spin 500ms infinite linear;
+          animation: spin 500ms infinite linear;
   border: 2px solid #CFCFCF;
   border-radius: 290486px;
   border-right-color: transparent;
@@ -198,7 +211,10 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 
 article, aside, figure, footer, header, hgroup, section, p {
@@ -9195,10 +9211,14 @@ fieldset[disabled] .button {
 }
 
 .progress:indeterminate {
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-name: moveIndeterminate;
-  animation-timing-function: linear;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: moveIndeterminate;
+          animation-name: moveIndeterminate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   background-color: #E8E8E8;
   background-image: linear-gradient(to right, #303031 30%, #E8E8E8 30%);
   background-position: top left;
@@ -9224,6 +9244,15 @@ fieldset[disabled] .button {
 
 .progress.is-large {
   height: 1.5rem;
+}
+
+@-webkit-keyframes moveIndeterminate {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
 }
 
 @keyframes moveIndeterminate {
@@ -14479,5 +14508,4 @@ fieldset[disabled] .select select:hover {
 .dialog.is-fullwidth {
   max-width: 100%;
 }
-
 /*# sourceMappingURL=umokit.css.map */

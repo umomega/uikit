@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <style>
+        @media only screen and (max-width: 600px) {
+            .inner-body {
+                width: 100% !important;
+            }
+            .footer {
+                width: 100% !important;
+            }
+            body {
+                padding: 0 !important;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+        body,
+        body *:not(html):not(style):not(br):not(tr):not(code) {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+            'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #E8E8E8;
+            color: #303031;
+            height: 100%;
+            hyphens: auto;
+            line-height: 1.5;
+            margin: 0;
+            -moz-hyphens: auto;
+            -ms-word-break: break-all;
+            width: 100% !important;
+            -webkit-hyphens: auto;
+            -webkit-text-size-adjust: none;
+            word-break: break-all;
+            word-break: break-word;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        p,
+        ul,
+        ol,
+        blockquote {
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        a {
+            color: #00249C;
+        }
+
+        a img {
+            border: none;
+        }
+
+        /* Typography */
+        h1,
+        h2,
+        h3 {
+            color: #303031;
+            line-height: 1.25;
+            margin-top: 0;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 0;
+            text-align: left;
+        }
+
+        p.sub {
+            font-size: 12px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /* Layout */
+        .wrapper {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            -premailer-width: 100%;
+        }
+
+        .content {
+            max-width: 600px;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            -premailer-width: 100%;
+        }
+
+        /* Header */
+
+        .header {
+            padding: 40px 0 0;
+            text-align: center;
+        }
+
+        .header a {
+            color: #00249C;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: 0 1px 0 white;
+        }
+
+        /* Body */
+
+        .body {
+            background-color: #ffffff;
+            border-bottom: 1px solid #E8E8E8;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            -premailer-width: 100%;
+        }
+
+        .inner-body {
+            background-color: #ffffff;
+            margin: 0 auto;
+            padding: 0;
+            width: 570px;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            -premailer-width: 570px;
+        }
+
+        /* Footer */
+
+        .footer {
+            margin: 0 auto;
+            padding: 0;
+            text-align: center;
+            width: 570px;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            -premailer-width: 570px;
+        }
+
+        .footer p {
+            color: #A09FA0;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* Tables */
+
+        .table table {
+            margin: 30px auto;
+            width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            -premailer-width: 100%;
+        }
+
+        .table th {
+            border-bottom: 1px solid #E8E8E8;
+            padding-bottom: 8px;
+            margin: 0;
+        }
+
+        .table td {
+            color: #706F71;
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .content-cell {
+            padding: 35px;
+        }
+
+        /* Buttons */
+
+        .action {
+            margin: 30px auto;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            -premailer-cellpadding: 0;
+            -premailer-cellspacing: 0;
+            -premailer-width: 100%;
+        }
+
+        .button {
+            font-size: 12px;
+            color: #fff;
+            display: inline-block;
+            text-decoration: none;
+            -webkit-text-size-adjust: none;
+            text-align: center;
+            background-color: #00249C;
+            border-top: 12px solid #00249C;
+            border-right: 32px solid #00249C;
+            border-bottom: 12px solid #00249C;
+            border-left: 32px solid #00249C;
+        }
+    </style>
+
+    <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+            <td align="center">
+                <table class="content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+
+                    <tr>
+                        <td class="header">
+                            <a href="#">
+                                <img src="/examples/img/nuclear-logo.png" width="30">
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-- Email Body -->
+                    <tr>
+                        <td class="body" width="100%" cellpadding="0" cellspacing="0">
+                            <table class="inner-body" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class="content-cell">
+                                        <h1>Message Title</h1>
+                                        <h2>Dear, John Doe</h2>
+
+                                        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                                        <table class="action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                        <tr>
+                                                            <td align="center">
+                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="#" class="button is-primary" target="_blank">CALL TO ACTION</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                        <p>Regards,<br>Nuclear CMS</p>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <table class="footer" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                    <td class="content-cell" align="center">
+                                        <p class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
