@@ -55,36 +55,36 @@
 $alignments: ('centered': 'center', 'justified': 'justify', 'left': 'left', 'right': 'right')
 
 @each $alignment, $text-align in $alignments
-    .has-content-#{$alignment}
+    .has-text-#{$alignment}
         text-align: #{$text-align} !important
 
 @each $alignment, $text-align in $alignments
     +mobile
-        .has-content-#{$alignment}-mobile
+        .has-text-#{$alignment}-mobile
             text-align: #{$text-align} !important
     +tablet
-        .has-content-#{$alignment}-tablet
+        .has-text-#{$alignment}-tablet
             text-align: #{$text-align} !important
     +tablet-only
-        .has-content-#{$alignment}-tablet-only
+        .has-text-#{$alignment}-tablet-only
             text-align: #{$text-align} !important
     +touch
-        .has-content-#{$alignment}-touch
+        .has-text-#{$alignment}-touch
             text-align: #{$text-align} !important
     +desktop
-        .has-content-#{$alignment}-desktop
+        .has-text-#{$alignment}-desktop
             text-align: #{$text-align} !important
     +desktop-only
-        .has-content-#{$alignment}-desktop-only
+        .has-text-#{$alignment}-desktop-only
             text-align: #{$text-align} !important
     +widescreen
-        .has-content-#{$alignment}-widescreen
+        .has-text-#{$alignment}-widescreen
             text-align: #{$text-align} !important
     +widescreen-only
-        .has-content-#{$alignment}-widescreen-only
+        .has-text-#{$alignment}-widescreen-only
             text-align: #{$text-align} !important
     +fullhd
-        .has-content-#{$alignment}-fullhd
+        .has-text-#{$alignment}-fullhd
             text-align: #{$text-align} !important
 
 .is-capitalized

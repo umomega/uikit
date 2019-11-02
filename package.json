@@ -1,6 +1,6 @@
 {
     "name": "umokit",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "The UI Kit for umΩ Apps",
     "sass": "umokit.sass",
     "style": "umokit/dist/css/umokit.min.css",
@@ -41,15 +41,15 @@
     },
     "homepage": "https://github.com/umomega/uikit#readme",
     "devDependencies": {
-        "autoprefixer": "^9.6.4",
+        "autoprefixer": "^9.7.0",
         "clean-css-cli": "^4.3.0",
         "concurrently": "^4.1.2",
         "live-server": "^1.2.1",
-        "node-sass": "^4.12.0",
-        "nodemon": "^1.19.3",
+        "node-sass": "^4.13.0",
+        "nodemon": "^1.19.4",
         "postcss-cli": "^6.1.3",
         "rimraf": "^2.7.1",
-        "uglify-js": "^3.6.1"
+        "uglify-js": "^3.6.4"
     },
     "main": "umokit.sass",
     "files": [
