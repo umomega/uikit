@@ -12404,7 +12404,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.has-name.is-empty .file-cta {
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .file.has-name.is-empty .file-name {
@@ -12451,11 +12451,11 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-boxed.has-name .file-cta {
-  border-radius: 8px 8px 0 0;
+  border-radius: 4px 4px 0 0;
 }
 
 .file.is-boxed.has-name .file-name {
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 4px 4px;
   border-width: 0 1px 1px;
 }
 
@@ -12480,11 +12480,11 @@ fieldset[disabled] .select select:hover {
 }
 
 .file.is-right .file-cta {
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .file.is-right .file-name {
-  border-radius: 8px 0 0 8px;
+  border-radius: 4px 0 0 4px;
   border-width: 1px 0 1px 1px;
   -webkit-box-ordinal-group: 0;
           order: -1;
@@ -12533,7 +12533,7 @@ fieldset[disabled] .select select:hover {
 .file-cta,
 .file-name {
   border-color: #E8E8E8;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 1em;
   padding-left: 1em;
   padding-right: 1em;
