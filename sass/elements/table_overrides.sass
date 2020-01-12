@@ -1,0 +1,39 @@
+.table
+    thead, tfoot
+        th,td
+            white-space: nowrap
+
+.table-container
+    &.has-background
+        position: relative
+        &::before
+            +pseudo-block
+            background-color: $white
+            box-shadow: $box-shadow
+            position: absolute
+            width: 100%
+            height: calc(100% - 3rem)
+            border-radius: $radius-small
+            z-index: -2
+            top: 3rem
+
+        &.has-footer::after
+            +pseudo-block
+            background-color: $table-row-active-background-color
+            height: 3rem
+            position: absolute
+            bottom: 0
+            z-index: -1
+            width: 100%
+            border-bottom-left-radius: $radius-small
+            border-bottom-right-radius: $radius-small
+
+.table-container.has-background.has-footer .table tfoot
+    color: $table-row-active-color
+    a,
+    strong
+        color: currentColor
+    td,
+    th
+        border-color: $table-row-active-color
+        color: currentColor
