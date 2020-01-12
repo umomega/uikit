@@ -47,3 +47,19 @@
 .nav-link {
     margin-right: 16px;
 }
+
+article section {
+    margin-bottom: 1.5em
+}
+
+section h3 {
+    margin-bottom: 0.5em
+}
+
+section p {
+    margin-bottom: 1.5em
+}
+
+article h2 {
+    margin-top: 0.5em
+}
