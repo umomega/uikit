@@ -1,0 +1,22 @@
+.tabs.is-umokit
+    ul
+        border-bottom: 0
+    li
+        border: 0
+        &.is-active a
+            border-bottom-color: $primary
+    a
+        font-size: 0.75em
+        font-weight: $weight-bold
+        text-transform: uppercase
+        color: inherit
+        border: 0.5rem solid transparent
+        padding: 0.5rem 2rem
+        transition: border-bottom-color $duration-short, color $duration-short
+        color: $grey
+
+.no-touchevents
+    .tabs
+        li:not(.is-active) a:hover
+            border-bottom-color: $grey
+            color: $grey
