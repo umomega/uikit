@@ -13736,7 +13736,7 @@ fieldset[disabled] .select select:hover {
   color: #FFFFFF;
   flex-grow: 1;
   flex-shrink: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.25;
 }
 
@@ -13796,6 +13796,99 @@ fieldset[disabled] .select select:hover {
 .modal.is-active .modal-card {
   transform: scale(1);
   opacity: 1;
+}
+
+.pagination-pages {
+  margin: 0 1rem;
+  background-color: #E8E8E8;
+  border-radius: 1rem;
+  height: 2rem;
+  padding: 0.125rem 2rem;
+  position: relative;
+  transition: background-color 150ms;
+}
+
+.pagination-pages > span:not(.icon) {
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.pagination-pages > span.icon {
+  vertical-align: middle;
+  font-size: 0.75rem;
+  margin-right: -1.25rem;
+  margin-left: 0.25rem;
+}
+
+.pagination-select {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 2rem;
+  -webkit-appearance: menulist-button;
+  opacity: 0;
+}
+
+.pagination-select option {
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.pagination {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pagination > a, .pagination > span {
+  margin: 0 0.25rem;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  padding: 0.25rem;
+  color: inherit;
+  transition: opacity 150ms;
+  vertical-align: middle;
+}
+
+.pagination > a.is-disabled, .pagination > span.is-disabled {
+  opacity: 0.5;
+}
+
+.pagination.is-inverted {
+  color: #FFFFFF;
+}
+
+.pagination.is-inverted .pagination-pages {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.no-touchevents .pagination > a, .no-touchevents .pagination > span {
+  color: inherit;
+}
+
+.no-touchevents .pagination > a:not(.is-disabled):hover, .no-touchevents .pagination > span:not(.is-disabled):hover {
+  opacity: 0.7;
+}
+
+.no-touchevents .pagination-pages:hover {
+  background-color: #CFCFCF;
+}
+
+.no-touchevents .pagination.is-inverted .pagination-pages:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .steps {

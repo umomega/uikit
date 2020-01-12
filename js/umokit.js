@@ -5,4 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
             $notification.parentNode.removeChild($notification);
         });
     });
+
+    (document.querySelectorAll('select.pagination-select') || []).forEach(function($select) {
+        $select.addEventListener('change', function() {
+            window.location.href = $select.value;
+        });
+    });
 });
