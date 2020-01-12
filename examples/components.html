@@ -38,6 +38,7 @@
                         </thead>
                         <tbody>
                             <tr><td><code>breadcrumb</code></td><td>Inherited from Bulma with minor extensions: <a href="https://bulma.io/documentation/components/breadcrumb/" target="_blank">https://bulma.io/documentation/components/breadcrumb/</a></td></tr>
+                            <tr><td><code>dropdown</code></td><td>Inherited from Bulma with minor extensions: <a href="https://bulma.io/documentation/components/dropdown/" target="_blank">https://bulma.io/documentation/components/dropdown/</a></td></tr>
                             <tr><td><code>modal</code></td><td>Inherited from Bulma with style modifications: <a href="https://bulma.io/documentation/components/modal/" target="_blank">https://bulma.io/documentation/components/modal/</a></td></tr>
                             <tr><td><code>tabs</code></td><td>Inherited from Bulma with a style extension: <a href="https://bulma.io/documentation/components/tabs/" target="_blank">https://bulma.io/documentation/components/tabs/</a></td></tr>
                         </tbody>
@@ -194,6 +195,45 @@
                         </div>
                     </div>
 
+                </section>
+                <section>
+                    <h3 class="has-color-primary">5.6. Dropdown</h3>
+
+                    <div class="dropdown is-active">
+                        <div class="dropdown-trigger">
+                            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span>Dropdown button</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <div class="dropdown-flap has-background-primary">Homepage</div>
+                                <div class="dropdown-label">Options</div>
+                                <a href="#" class="dropdown-item">
+                                    <span class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                    Dropdown item
+                                </a>
+                                <a class="dropdown-item">
+                                    Other dropdown item
+                                </a>
+                                <a href="#" class="dropdown-item is-active">
+                                    Active dropdown item
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Other dropdown item
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">
+                                    With a divider
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </article>
 
