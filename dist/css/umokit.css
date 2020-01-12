@@ -15,7 +15,7 @@
   animation-iteration-count: infinite;
 }
 
-.is-unselectable, .button, .delete, .file, .breadcrumb, .steps, .tabs {
+.modal-close, .is-unselectable, .button, .delete, .file, .breadcrumb, .steps, .tabs {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -45,6 +45,85 @@
   margin-bottom: 1.5em;
 }
 
+.modal-close {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: rgba(48, 48, 49, 0.2);
+  border: none;
+  border-radius: 290486px;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 0;
+  height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: none;
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+}
+
+.modal-close::before, .modal-close::after {
+  background-color: #FFFFFF;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform-origin: center center;
+}
+
+.modal-close::before {
+  height: 2px;
+  width: 50%;
+}
+
+.modal-close::after {
+  height: 50%;
+  width: 2px;
+}
+
+.modal-close:hover, .modal-close:focus {
+  background-color: rgba(48, 48, 49, 0.3);
+}
+
+.modal-close:active {
+  background-color: rgba(48, 48, 49, 0.4);
+}
+
+.is-small.modal-close {
+  height: 16px;
+  max-height: 16px;
+  max-width: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+
+.is-medium.modal-close {
+  height: 24px;
+  max-height: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  width: 24px;
+}
+
+.is-large.modal-close {
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  width: 32px;
+}
+
 .button.is-loading::after, .select.is-loading::after, .control.is-loading::after {
   animation: spin 500ms infinite linear;
   border: 2px solid #CFCFCF;
@@ -58,7 +137,7 @@
   width: 1em;
 }
 
-.is-overlay {
+.is-overlay, .modal, .modal-background {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -13581,6 +13660,142 @@ fieldset[disabled] .select select:hover {
   display: flex;
   justify-content: center;
   padding: 0 0.75em;
+}
+
+.modal {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: 40;
+}
+
+.modal.is-active {
+  display: flex;
+}
+
+.modal-background {
+  background-color: rgba(48, 48, 49, 0.85);
+}
+
+.modal-content,
+.modal-card {
+  margin: 0 20px;
+  max-height: calc(100vh - 160px);
+  overflow: auto;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (min-width: 769px), print {
+  .modal-content,
+  .modal-card {
+    margin: 0 auto;
+    max-height: calc(100vh - 40px);
+    width: 36rem;
+  }
+}
+
+.modal-close {
+  background: none;
+  height: 40px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+}
+
+.modal-card {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 40px);
+  overflow: hidden;
+  -ms-overflow-y: visible;
+}
+
+.modal-card-head,
+.modal-card-foot {
+  align-items: center;
+  background-color: #303031;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  padding: 1em 1.5em;
+  position: relative;
+}
+
+.modal-card-head {
+  border-bottom: 0;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.modal-card-title {
+  color: #FFFFFF;
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.modal-card-foot {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top: 0;
+}
+
+.modal-card-foot .button:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+.modal-card-body {
+  -webkit-overflow-scrolling: touch;
+  background-color: #303031;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  padding: 1em 1.5em;
+}
+
+.modal-card-head .delete {
+  margin-right: -0.5rem;
+}
+
+.modal-card-body {
+  color: #FFFFFF;
+}
+
+.modal-card-foot {
+  justify-content: flex-end;
+}
+
+.modal-card {
+  transform: scale(1.2);
+  opacity: 0;
+  transition: transform 400ms, opacity 400ms;
+  box-shadow: 0 0.5em 1em -0.125em rgba(48, 48, 49, 0.2), 0 0px 0 1px rgba(48, 48, 49, 0.02);
+  border: 0.125rem solid #585759;
+  border-radius: 4px;
+}
+
+.modal {
+  transform: scale(0);
+  transition: opacity 400ms, transform 0ms linear 450ms;
+  display: flex;
+  opacity: 0;
+}
+
+.modal.is-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+.modal.is-active .modal-card {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .steps {

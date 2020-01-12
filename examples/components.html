@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../dist/css/umokit.css">
         <link rel="stylesheet" href="css/examples.css">
         <script src="../dist/js/umokit.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     </head>
     <body>
         <div class="container">
@@ -37,6 +38,7 @@
                         </thead>
                         <tbody>
                             <tr><td><code>breadcrumb</code></td><td>Inherited from Bulma with minor extensions: <a href="https://bulma.io/documentation/components/breadcrumb/" target="_blank">https://bulma.io/documentation/components/breadcrumb/</a></td></tr>
+                            <tr><td><code>modal</code></td><td>Inherited from Bulma with style modifications: <a href="https://bulma.io/documentation/components/modal/" target="_blank">https://bulma.io/documentation/components/modal/</a></td></tr>
                             <tr><td><code>tabs</code></td><td>Inherited from Bulma with a style extension: <a href="https://bulma.io/documentation/components/tabs/" target="_blank">https://bulma.io/documentation/components/tabs/</a></td></tr>
                         </tbody>
                     </table>
@@ -73,8 +75,51 @@
                     </div>
 
                 </section>
+
+                <section>
+                    <h3 class="has-color-primary">5.4. Modal</h3>
+
+                    <button class="button is-primary is-medium" id="openModal">OPEN MODAL</button>
+
+                    <div class="modal" id="modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                                <p class="modal-card-title">Modal title</p>
+                                <button class="delete is-large" aria-label="close" id="closeModal"></button>
+                            </header>
+                            <section class="modal-card-body">
+                                Test content here
+                            </section>
+                            <footer class="modal-card-foot">
+                                <button class="button is-black">CANCEL</button>
+                                <button class="button is-success">
+                                    <span>CONFIRM</span>
+                                    <span class="icon-flap">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </button>
+                            </footer>
+                        </div>
+                    </div>
+
+                </section>
             </article>
 
         </div>
+
+        <script type="text/javascript">
+        const modalTrigger = document.querySelector('#openModal')
+        const modalCloseTrigger = document.querySelector('#closeModal')
+        const modal = document.querySelector('#modal')
+
+        modalTrigger.addEventListener('click', function() {
+            modal.classList.add('is-active')
+        })
+
+        modalCloseTrigger.addEventListener('click', function() {
+            modal.classList.remove('is-active')
+        })
+        </script>
     </body>
 </html>
