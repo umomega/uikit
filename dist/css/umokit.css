@@ -15,7 +15,7 @@
   animation-iteration-count: infinite;
 }
 
-.is-unselectable, .button, .delete, .file, .breadcrumb, .tabs {
+.is-unselectable, .button, .delete, .file, .breadcrumb, .steps, .tabs {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -41,7 +41,7 @@
 }
 
 .box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child),
-.subtitle:not(:last-child), .breadcrumb:not(:last-child), .tabs:not(:last-child), .level:not(:last-child) {
+.subtitle:not(:last-child), .breadcrumb:not(:last-child), .steps:not(:last-child), .tabs:not(:last-child), .level:not(:last-child) {
   margin-bottom: 1.5em;
 }
 
@@ -13581,6 +13581,77 @@ fieldset[disabled] .select select:hover {
   display: flex;
   justify-content: center;
   padding: 0 0.75em;
+}
+
+.steps {
+  -webkit-overflow-scrolling: touch;
+  align-items: stretch;
+  display: flex;
+  font-size: 0.625rem;
+  justify-content: space-between;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.steps ul {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: flex-start;
+}
+
+.steps li {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #A09FA0;
+  position: relative;
+  padding: 1rem 2rem 1rem;
+}
+
+.steps li::after {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #CFCFCF;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.25rem;
+  z-index: 1;
+}
+
+.steps li:not(:first-child)::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #E8E8E8;
+  position: absolute;
+  right: calc(50% + 0.25rem);
+  bottom: 0.1875rem;
+  z-index: 0;
+}
+
+.steps li.is-complete {
+  color: #00249C;
+}
+
+.steps li.is-complete::after {
+  background-color: #00249C;
+}
+
+.steps li.is-complete::before {
+  background-color: #00249C;
 }
 
 .tabs {

@@ -1,0 +1,58 @@
+.steps
+    @extend %block
+    +overflow-touch
+    @extend %unselectable
+    align-items: stretch
+    display: flex
+    font-size: $size-9
+    justify-content: space-between
+    overflow: hidden
+    overflow-x: auto
+    white-space: nowrap
+
+    ul
+        justify-content: center
+        align-items: center
+        display: flex
+        flex-grow: 1
+        flex-shrink: 0
+        justify-content: flex-start
+
+    li
+        display: block
+        flex-grow: 1
+        flex-shrink: 0
+        flex-basis: 0
+        text-align: center
+        text-transform: uppercase
+        font-weight: $weight-bold
+        color: $grey
+        position: relative
+        padding: 1rem 2rem 1rem
+        &::after
+            +pseudo-block
+            width: 0.5rem
+            height: 0.5rem
+            border-radius: 0.25rem
+            background-color: $grey-lighter
+            position: absolute
+            bottom: 0
+            left: 50%
+            margin-left: -0.25rem
+            z-index: 1
+        &:not(:first-child)::before
+            +pseudo-block
+            width: 100%
+            height: 0.125rem
+            background-color: $grey-lightest
+            position: absolute
+            right: calc(50% + 0.25rem)
+            bottom: 0.1875rem
+            z-index: 0
+
+        &.is-complete
+            color: $primary
+            &::after
+                background-color: $primary
+            &::before
+                background-color: $primary
