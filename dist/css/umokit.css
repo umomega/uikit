@@ -8273,7 +8273,7 @@ fieldset[disabled] .button {
 
 .notification {
   background-color: #F4F4F4;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 0.75rem 2.5rem 0.75rem 1rem;
   position: relative;
 }
@@ -10467,7 +10467,7 @@ a.tag:hover {
 .input, .textarea, .select select {
   background-color: #FFFFFF;
   border-color: #E8E8E8;
-  border-radius: 8px;
+  border-radius: 4px;
   color: #303031;
 }
 
@@ -13659,6 +13659,10 @@ fieldset[disabled] .select select:hover {
 
 .help {
   padding-left: 4px;
+}
+
+.field:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .toggle {
