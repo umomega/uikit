@@ -16690,6 +16690,7 @@ button.dropdown-item.is-active {
 
 .dialog.is-narrow {
   max-width: 22.5em;
+  padding: 2em 1.25em;
 }
 
 .dialog.is-large {
