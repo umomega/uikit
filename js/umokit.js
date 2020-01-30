@@ -1,14 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    (document.querySelectorAll('.notification .delete') || []).forEach(function($delete) {
-        $notification = $delete.parentNode;
-        $delete.addEventListener('click', function() {
-            $notification.parentNode.removeChild($notification);
+require('./modernizr');
+
+import $ from 'cash-dom';
+
+$(documment).ready(function() {
+    $('.notification .delete').on('click', function() {
+        $(this).on('click', function() {
+            $(this).parent().remove();
         });
     });
 
-    (document.querySelectorAll('select.pagination-select') || []).forEach(function($select) {
-        $select.addEventListener('change', function() {
-            window.location.href = $select.value;
-        });
+    $('select.pagination-select').on('change', function() {
+        window.location.href = $(this).val();
     });
 });
