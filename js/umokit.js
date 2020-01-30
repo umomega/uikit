@@ -1,6 +1,6 @@
 import $ from 'cash-dom';
 
-$(documment).ready(function() {
+$(document).ready(function() {
     $('.notification .delete').on('click', function() {
         $(this).on('click', function() {
             $(this).parent().remove();
