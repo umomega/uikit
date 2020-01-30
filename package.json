@@ -1,10 +1,11 @@
 {
     "name": "umokit",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "The UI Kit for umΩ Apps",
     "sass": "umokit.sass",
     "style": "umokit/dist/css/umokit.min.css",
     "unpkg": "dist/css/umokit.css",
+    "main": "dist/js/umokit.min.js",
     "scripts": {
         "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss && npm run build-js",
         "build-autoprefix": "postcss --use autoprefixer --map false --output dist/css/umokit.css dist/css/umokit.css",
