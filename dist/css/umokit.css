@@ -16688,6 +16688,10 @@ button.dropdown-item.is-active {
   }
 }
 
+.dialog.is-narrow {
+  max-width: 22.5em;
+}
+
 .dialog.is-large {
   max-width: 86em;
 }
