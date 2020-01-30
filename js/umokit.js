@@ -1,5 +1,3 @@
-require('./modernizr');
-
 import $ from 'cash-dom';
 
 $(documment).ready(function() {

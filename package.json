@@ -1,6 +1,6 @@
 {
     "name": "umokit",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "The UI Kit for umΩ Apps",
     "sass": "umokit.sass",
     "style": "umokit/dist/css/umokit.min.css",
@@ -11,7 +11,7 @@
         "build-autoprefix": "postcss --use autoprefixer --map false --output dist/css/umokit.css dist/css/umokit.css",
         "build-cleancss": "cleancss -o dist/css/umokit.min.css dist/css/umokit.css",
         "build-clean": "rimraf css",
-        "build-js": "uglifyjs --compress --mangle --output dist/js/umokit.min.js -- js/umokit.js",
+        "build-js": "uglifyjs --compress --mangle --output dist/js/umokit.min.js -- js/modernizr.min.js js/umokit.js",
         "build-sass": "node-sass --importer node_modules/node-sass-import --output-style expanded --source-map true umokit.sass dist/css/umokit.css",
         "build-sass:watch": "nodemon -e sass -x \"npm run build-sass\"",
         "serve": "live-server --open=/examples",
@@ -43,7 +43,6 @@
     "homepage": "https://github.com/umomega/uikit#readme",
     "devDependencies": {
         "autoprefixer": "^9.7.0",
-        "cash-dom": "^6.0.1",
         "clean-css-cli": "^4.3.0",
         "concurrently": "^4.1.2",
         "live-server": "^1.2.1",
@@ -64,6 +63,7 @@
         "umokit.sass"
     ],
     "dependencies": {
-        "bulma": "^0.8.0"
+        "bulma": "^0.8.0",
+        "cash-dom": "^6.0.1"
     }
 }
