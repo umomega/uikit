@@ -1,0 +1,35 @@
+$spacing-margin-key: 'm'
+$spacing-padding-key: 'p'
+$spacing-separator: '-'
+$spacing-sizes: (('none', 0), ('xxs', 0.25), ('xs', 0.5), ('sm', 0.75), ('md', 1), ('lg', 1.5), ('xl', 2), ('xxl', 4))
+$spacing-position: (('t', 'top'), ('r', 'right'), ('b', 'bottom'), ('l', 'left'))
+
+@function sizeValue($key, $value)
+    @return if($key == 'none', 0, $value + rem)
+
+@each $size in $spacing-sizes
+    $sizeKey: nth($size, 1)
+    $sizeValue: nth($size, 2)
+    .#{$spacing-margin-key}#{$spacing-separator}#{$sizeKey}
+        margin: sizeValue($sizeKey, $sizeValue)
+    .#{$spacing-padding-key}#{$spacing-separator}#{$sizeKey}
+        padding: sizeValue($sizeKey, $sizeValue)
+
+    @each $position in $spacing-position
+        $posKey: nth($position, 1)
+        $posValue: nth($position, 2)
+        .#{$spacing-margin-key}#{$posKey}#{$spacing-separator}#{$sizeKey}
+            margin-#{$posValue}: sizeValue($sizeKey, $sizeValue)
+        .#{$spacing-padding-key}#{$posKey}#{$spacing-separator}#{$sizeKey}
+            padding-#{$posValue}: sizeValue($sizeKey, $sizeValue)
+
+.m-auto
+    margin: auto
+
+.mx-auto
+    margin-left: auto
+    margin-right: auto
+
+.my-auto
+    margin-top: auto
+    margin-bottom: auto
