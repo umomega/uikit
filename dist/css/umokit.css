@@ -8897,8 +8897,8 @@ fieldset[disabled] .button {
 }
 
 .notification > .delete {
-  top: 0.875rem;
-  right: 0.875rem;
+  top: 0.75rem;
+  right: 0.75rem;
 }
 
 .progress {
