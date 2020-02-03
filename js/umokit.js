@@ -1,4 +1,4 @@
-import $ from 'jquery/dist/jquery.slim';
+import $ from 'cash-dom';
 import zxcvbn from 'zxcvbn';
 
 $(document).ready(function() {
@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('input.password-with-meter').each(function() {
         var input = $(this),
             meter = input.closest('div.field:not(.has-addons)').find('div.password-meter');
-        input.on('change', function() {
+        input.on('keyup', function() {
             var result = zxcvbn(input.val());
             meter.removeClass().addClass('password-meter password-meter--' + result.score);
         });
