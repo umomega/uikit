@@ -13999,6 +13999,37 @@ fieldset[disabled] .select select:hover {
   margin-bottom: 1rem;
 }
 
+.password-meter {
+  height: 0.5rem;
+  margin-top: -0.25rem;
+  background-color: #E8E8E8;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative;
+}
+
+.password-meter::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transition: width 150ms, background-color 150ms;
+  transition: width 150ms, background-color 150ms;
+  background-color: #EF3340;
+}
+
+.password-meter--2::before {
+  background-color: #D9811C;
+}
+
+.password-meter--3::before {
+  background-color: #FFDE57;
+}
+
+.password-meter--4::before {
+  background-color: #35AD90;
+}
+
 .toggle {
   cursor: pointer;
 }

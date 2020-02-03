@@ -1,6 +1,6 @@
 {
     "name": "umokit",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "description": "The UI Kit for umΩ Apps",
     "sass": "umokit.sass",
     "style": "umokit/dist/css/umokit.min.css",
@@ -64,6 +64,7 @@
     ],
     "dependencies": {
         "bulma": "^0.8.0",
-        "cash-dom": "^6.0.1"
+        "cash-dom": "^6.0.1",
+        "zxcvbn": "^4.4.2"
     }
 }
