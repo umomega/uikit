@@ -15,6 +15,6 @@ $('input.password-with-meter').each(function() {
     var input = $(this);
     input.on('change', function() {
         var result = zxcvbn(input.val());
-        input.next('div.password-meter').removeClass().addClass('password-meter password-meter--' + result.score);
+        input.closest('div.field:not(.has-addons)').find('div.password-meter').removeClass().addClass('password-meter password-meter--' + result.score);
     });
 })
