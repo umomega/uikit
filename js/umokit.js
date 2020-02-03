@@ -11,10 +11,9 @@ $(document).ready(function() {
     });
 });
 
-$('input.password-with-meter').each(function() {
-    var input = $(this);
-    input.on('change', function() {
-        var result = zxcvbn(input.val());
-        input.closest('div.field:not(.has-addons)').find('div.password-meter').removeClass().addClass('password-meter password-meter--' + result.score);
-    });
-})
+$('input.password-with-meter').on('change', function() {
+    var input = $(this),
+        meter = input.closest('div.field:not(.has-addons)').find('div.password-meter'),
+        result = zxcvbn(input.val());
+    meter.removeClass().addClass('password-meter password-meter--' + result.score);
+});
