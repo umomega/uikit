@@ -14006,7 +14006,7 @@ fieldset[disabled] .select select:hover {
 
 .password-meter {
   top: -1.25rem;
-  height: 0.75rem;
+  height: 0.625rem;
   z-index: -1;
   background-color: #F4F4F4;
   border-bottom-left-radius: 4px;

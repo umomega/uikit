@@ -1,4 +1,4 @@
-import $ from 'cash-dom';
+import $ from 'jquery/dist/jquery.slim';
 import zxcvbn from 'zxcvbn';
 
 $(document).ready(function() {
@@ -9,11 +9,13 @@ $(document).ready(function() {
     $('select.pagination-select').on('change', function() {
         window.location.href = $(this).val();
     });
-});
 
-$('input.password-with-meter').on('change', function() {
-    var input = $(this),
-        meter = input.closest('div.field:not(.has-addons)').find('div.password-meter'),
-        result = zxcvbn(input.val());
-    meter.removeClass().addClass('password-meter password-meter--' + result.score);
+    $('input.password-with-meter').each(function() {
+        var input = $(this),
+            meter = input.closest('div.field:not(.has-addons)').find('div.password-meter');
+        input.on('change', function() {
+            var result = zxcvbn(input.val());
+            meter.removeClass().addClass('password-meter password-meter--' + result.score);
+        });
+    });
 });
