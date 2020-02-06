@@ -17062,16 +17062,27 @@ button.dropdown-item.is-active {
   background-image: url(../img/dialog-bg.jpg);
 }
 
+.dialog-container.is-transparent {
+  background-color: #00249C;
+}
+
+.dialog-container.is-transparent::before {
+  opacity: 0.1;
+}
+
 .dialog {
   position: relative;
   z-index: 1;
   align-self: center;
-  border-radius: 4px;
   width: 100%;
   max-width: 60em;
+  padding: 2em;
+}
+
+.dialog:not(.is-transparent) {
+  border-radius: 4px;
   background-color: #FFFFFF;
   box-shadow: 0 0.5em 1em -0.125em rgba(48, 48, 49, 0.2), 0 0px 0 1px rgba(48, 48, 49, 0.02);
-  padding: 2em;
 }
 
 @media screen and (max-width: 768px) {
@@ -17095,5 +17106,9 @@ button.dropdown-item.is-active {
 
 .dialog-separator {
   border-top: 1px solid #E8E8E8;
+}
+
+.dialog-hero-heading {
+  font-size: 6rem;
 }
 /*# sourceMappingURL=umokit.css.map */

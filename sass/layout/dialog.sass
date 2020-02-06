@@ -21,17 +21,25 @@
         background-repeat: no-repeat
         background-image: url(../img/dialog-bg.jpg)
 
+    &.is-transparent
+        background-color: $primary
+        &::before
+            opacity: 0.1
+
 .dialog
     position: relative
     z-index: 1
     align-self: center
-    border-radius: $radius-small
     width: 100%
     max-width: 60em
-    background-color: $background
-    box-shadow: $shadow
     padding: 2em
-    +mobile
+
+    &:not(.is-transparent)
+        border-radius: $radius-small
+        background-color: $background
+        box-shadow: $shadow
+
+    +mobile    
         padding: 0.75em
     &.is-narrow
         max-width: 22.5em
@@ -43,3 +51,6 @@
 
 .dialog-separator
     border-top: 1px solid $border
+
+.dialog-hero-heading
+    font-size: 6rem
