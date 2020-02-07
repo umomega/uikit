@@ -1,6 +1,6 @@
 {
     "name": "umokit",
-    "version": "0.3.15",
+    "version": "0.3.16",
     "description": "The UI Kit for umΩ Apps",
     "sass": "umokit.sass",
     "style": "umokit/dist/css/umokit.min.css",
