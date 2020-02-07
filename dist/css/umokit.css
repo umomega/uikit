@@ -2120,6 +2120,10 @@ a.box:active {
   width: 4.6666666667em;
 }
 
+.button.icon-only.is-compact {
+  width: 3.3333333333em;
+}
+
 .button.icon-only-wide {
   width: 6.6666666667em;
 }
