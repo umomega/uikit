@@ -10830,6 +10830,10 @@ a.tag:hover {
   font-size: 0.625rem;
 }
 
+.input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
 .input, .textarea, .select select {
   background-color: #FFFFFF;
   border-color: #E8E8E8;
