@@ -14547,7 +14547,7 @@ button.dropdown-item.is-active {
   background-color: #E8E8E8;
   border-radius: 1rem;
   height: 2rem;
-  padding: 0.125rem 2.5rem 0.125rem 2rem;
+  padding: 0.125rem 1.5rem 0.125rem 2rem;
   position: relative;
   -webkit-transition: background-color 150ms;
   transition: background-color 150ms;
