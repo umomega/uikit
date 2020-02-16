@@ -10830,6 +10830,10 @@ a.tag:hover {
   font-size: 0.625rem;
 }
 
+.input {
+  -webkit-appearance: textfield;
+}
+
 .input::-webkit-search-decoration {
   -webkit-appearance: none;
 }
