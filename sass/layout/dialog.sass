@@ -8,7 +8,7 @@
     +mobile
         padding: 0.75em
 
-    &::before
+    &::before, &::after
         +pseudo-block
         z-index: 0
         position: fixed
@@ -16,15 +16,20 @@
         left: 0
         width: 100%
         height: 100vh
+
+    &::before
         background-size: cover
         background-position: center center
         background-repeat: no-repeat
         background-image: url(../img/dialog-bg.jpg)
 
-    &.is-transparent
+    &::after
+        opacity: 0
         background-color: $primary
-        &::before
-            opacity: 0.1
+
+    &.is-transparent
+        &::after
+            opacity: 0.9
 
 .dialog
     position: relative

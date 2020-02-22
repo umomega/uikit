@@ -17087,7 +17087,7 @@ button.dropdown-item.is-active {
   }
 }
 
-.dialog-container::before {
+.dialog-container::before, .dialog-container::after {
   content: '';
   display: block;
   z-index: 0;
@@ -17096,18 +17096,22 @@ button.dropdown-item.is-active {
   left: 0;
   width: 100%;
   height: 100vh;
+}
+
+.dialog-container::before {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url(../img/dialog-bg.jpg);
 }
 
-.dialog-container.is-transparent {
+.dialog-container::after {
+  opacity: 0;
   background-color: #00249C;
 }
 
-.dialog-container.is-transparent::before {
-  opacity: 0.1;
+.dialog-container.is-transparent::after {
+  opacity: 0.9;
 }
 
 .dialog {
