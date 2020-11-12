@@ -13898,7 +13898,7 @@ fieldset[disabled] .select select:hover {
 }
 
 .field:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .password-with-meter {
