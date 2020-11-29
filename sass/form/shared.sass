@@ -4,5 +4,12 @@ $input-radius: $radius-small !default
 
 .input
 	-webkit-appearance: textfield
+	font-weight: $weight-normal
 	&::-webkit-search-decoration
 		-webkit-appearance: none
+
+.label
+	letter-spacing: 0.03125rem
+	font-weight: $weight-normal
+	&::before
+		content: '_ '
